@@ -68,6 +68,7 @@
     border: 1px solid var(--whiteColor);
     padding: 8px;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   .menuButton:hover {
@@ -111,7 +112,7 @@
     transition: height 0.3s ease;
   }
 
-  .menuSection:hover {
+  .menuButton:click .menuSection {
     height: 270px;
   }
 }
