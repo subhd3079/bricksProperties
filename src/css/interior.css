@@ -1,0 +1,70 @@
+:root {
+  --themeColor: #363168;
+  --lightBlueColor: #0066FF;
+  --darkBlueColor: #000099;
+  --yellowColor: #FFF272;
+  --whiteColor: white;
+  --blackColor: #404040;
+  --grayColor: gray;
+  --lavenderColor: lavender;
+}
+
+.interiorImageSection {
+  background-image: url("https://i.ibb.co/mDZXTS5/interior-Section-Image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.interiorImageSection>p {
+  color: var(--lightBlueColor);
+  width: 300px;
+  position: relative;
+  left: 20%;
+  top: 25%;
+}
+
+.interiorGridSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.interiorGridDiv {
+  box-shadow: 0px 0px 5px var(--grayColor);
+  text-align: center;
+  background-color: var(--lavenderColor);
+}
+
+.interiorGridDiv>div:nth-child(1)>img {
+  width: 100%;
+}
+
+.interiorGridDiv>div:nth-child(2) {
+  padding: 30px;
+}
+
+.interiorGridDiv>div:nth-child(2)>p {
+  margin: 10px 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  .interiorImageSection {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .interiorImageSection {
+    height: 200px;
+  }
+  
+  .interiorImageSection>p {
+    width: 200px;
+    font-size: 25px;
+  }
+
+  .interiorGridDiv>div:nth-child(2) {
+    padding: 10px;
+  }
+}

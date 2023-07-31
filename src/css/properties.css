@@ -1,0 +1,84 @@
+:root {
+  --themeColor: #363168;
+  --lightBlueColor: #0066FF;
+  --darkBlueColor: #000099;
+  --yellowColor: #FFF272;
+  --whiteColor: white;
+  --blackColor: #404040;
+  --grayColor: gray;
+  --lavenderColor: lavender;
+}
+
+.propertiesImageSection {
+  background-image: url("https://i.ibb.co/zxSsfXF/properties-Section-Image.png");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.propertiesImageSection>p {
+  font-size: 45px;
+  color: white;
+}
+
+.propertiesDiv>div:nth-child(1)>img {
+  width: 100%;
+}
+
+.propertiesDiv {
+  text-align: center;
+}
+
+.propertiesDiv>div:nth-child(2) {
+  background-color: var(--lavenderColor);
+  padding: 20px;
+  display: inline-block;
+  margin: auto;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.propertiesDiv>div:nth-child(2)>p:nth-child(2) {
+  width: 350px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.propertiesDiv>p:nth-child(3) {
+  text-align: justify;
+}
+
+.allPropertiesSection hr {
+  width: 100px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  .propertiesImageSection {
+    height: 400px;
+  }
+
+  .propertiesImageSection>p {
+    font-size: 35px;
+  }
+
+  .allPropertiesSection hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .propertiesImageSection {
+    height: 200px;
+  }
+
+  .propertiesImageSection>p {
+    font-size: 25px;
+  }
+}
