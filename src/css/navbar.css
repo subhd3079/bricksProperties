@@ -84,6 +84,16 @@
     position: relative;
   }
 
+  .menuSection a {
+    width: 100%;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+  }
+
+  .menuSection a:hover {
+    padding: 5px 0px;
+  }
+
   .menuSection {
     position: absolute;
     top: 55px;
@@ -96,20 +106,12 @@
     border-radius: 0px 0px 10px 10px;
     padding: 20px 30px 10px 30px;
     overflow: hidden;
+    height: 0px;
     /* display: none; */
+    transition: height 0.3s ease;
   }
 
-  .menuSection a {
-    width: 100%;
-    padding: 5px 0px;
-    margin-bottom: 10px;
-  }
-
-  .menuSection a:hover {
-    padding: 5px 0px;
-  }
-
-  .menuButton:hover .menuSection {
-    height: auto;
+  .menuSection:hover {
+    height: 270px;
   }
 }
