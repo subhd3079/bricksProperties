@@ -1,16 +1,5 @@
-:root {
-  --themeColor: #363168;
-  --lightBlueColor: #0066FF;
-  --darkBlueColor: #000099;
-  --yellowColor: #FFF272;
-  --whiteColor: white;
-  --blackColor: #404040;
-  --grayColor: gray;
-  --lavenderColor: lavender;
-}
-
 .footer {
-  background-color: var(--themeColor);
+  background-color: var(--darkThemeColor);
   color: var(--whiteColor);
 }
 
