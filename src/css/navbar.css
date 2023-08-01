@@ -112,7 +112,7 @@
     transition: height 0.3s ease;
   }
 
-  .menuButton:click .menuSection {
+  .menuButton:hover .menuSection {
     height: 270px;
   }
 }
