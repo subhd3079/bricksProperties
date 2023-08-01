@@ -61,6 +61,10 @@
     padding: 10px 20px;
   }
 
+  .menuSection {
+    display: none;
+  }
+
   .menuButton {
     display: inline-block;
     width: 40px;
@@ -71,14 +75,14 @@
     cursor: pointer;
   }
 
-  .menuButton:hover {
+  .menuButton > img {
+    width: 100%;
+  }
+
+  .enableButton {
     background-color: var(--darkThemeColor);
     border: 1px solid var(--darkThemeColor);
     border-radius: 5px 5px 0px 0px;
-  }
-
-  .menuButton > img {
-    width: 100%;
   }
 
   .navbar {
@@ -86,13 +90,20 @@
   }
 
   .menuSection a {
+    text-decoration: none;
+    color: var(--whiteColor);
     width: 100%;
-    padding: 5px 0px;
-    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: small;
+  }
+
+  .menuSection a:nth-child(1) {
+    margin-top: 10px;
   }
 
   .menuSection a:hover {
-    padding: 5px 0px;
+    color: var(--yellowColor);
+    padding: 10px 20px;
   }
 
   .menuSection {
@@ -104,15 +115,13 @@
     background-color: var(--darkThemeColor);
     display: flex;
     flex-direction: column;
-    border-radius: 0px 0px 10px 10px;
-    padding: 20px 30px 10px 30px;
     overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
     height: 0px;
-    /* display: none; */
     transition: height 0.3s ease;
   }
 
-  .menuButton:hover .menuSection {
+  .enableMenu {
     height: 270px;
   }
 }
