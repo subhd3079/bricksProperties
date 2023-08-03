@@ -23,9 +23,9 @@ function Navbar() {
     }
   };
 
-  // const activeStyle = {
-  //   borderBottom: "2px solid white"
-  // }
+  const activeStyle = {
+    borderBottom: "2px solid white"
+  }
 
   const inActiveStyle = {
     borderBottom: "2px solid transparent",
@@ -44,9 +44,9 @@ function Navbar() {
           </NavLink>
         </div>
         <div className="menuSection">
-          <HashLink smooth to="/#">
+          <NavLink to="/">
             Home
-          </HashLink>
+          </NavLink>
           <HashLink smooth to="/#properties">
             Properties
           </HashLink>

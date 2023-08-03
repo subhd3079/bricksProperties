@@ -168,7 +168,7 @@ textarea {
   font-size: 15px;
   color: var(--lightBlueColor);
   letter-spacing: 0.05em;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .lightBlueBigText {
@@ -200,7 +200,7 @@ textarea {
   .container {
     padding: 40px;
   }
-  
+
   .firstContainer {
     padding: 0px 40px 40px 40px;
   }
@@ -208,11 +208,11 @@ textarea {
   .whiteBigText {
     font-size: 35px;
   }
-  
+
   .yellowSpanText {
     font-size: 35px;
   }
-  
+
   .whitePara {
     font-size: 12px;
   }
@@ -228,7 +228,7 @@ textarea {
   .container {
     padding: 30px;
   }
-  
+
   .firstContainer {
     padding: 0px 30px 30px 30px;
   }
@@ -236,16 +236,42 @@ textarea {
   .darkBlueBigText {
     font-size: 25px;
   }
-  
+
   .lightBlueSmallText {
     font-size: 12px;
   }
-  
+
   .lightBlueBigText {
     font-size: 25px;
   }
-  
+
   .darkBlueSmallText {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .firstContainer {
+    padding: 0px 20px 20px 20px;
+  }
+
+  .whiteBigText {
+    font-size: 30px;
+  }
+
+  .yellowSpanText {
+    font-size: 30px;
+  }
+
+  .darkBlueBigText {
+    font-size: 20px;
+  }
+
+  .lightBlueBigText {
+    font-size: 20px;
   }
 }

@@ -231,11 +231,11 @@
   .mainYellowText {
     margin-bottom: 15px;
   }
-  
+
   .mainHeadingText {
     margin-bottom: 5px;
   }
-  
+
   .mainParaText {
     margin-bottom: 30px;
     width: 90%;
@@ -244,7 +244,7 @@
   .interiorLeftSection {
     width: 20%;
   }
-  
+
   .interiorRightSection {
     width: 75%;
   }
@@ -262,7 +262,7 @@
     width: 100%;
   }
 
-  .mainImageSection > img {
+  .mainImageSection>img {
     width: 75%;
   }
 
@@ -276,11 +276,11 @@
     margin: auto;
     margin-bottom: 30px;
   }
-  
+
   .heroEmailForm {
     flex-direction: column;
   }
-  
+
   .heroEmailForm>input {
     width: 100%;
     text-align: center;
@@ -300,11 +300,11 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  
+
   .aboutUpperSection>div:nth-child(2) {
     width: 100%;
   }
-  
+
   .aboutUpperSection>div>img {
     width: 75%;
     border-radius: 75px;
@@ -327,22 +327,22 @@
   .interiorSectionDiv {
     flex-direction: column;
   }
-  
+
   .interiorLeftSection {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
   }
-  
+
   .interiorLeftSection>p:nth-child(1) {
     margin: auto;
     margin-bottom: 15px;
   }
-  
+
   .interiorLeftSection>p:nth-child(2) {
     margin-bottom: 20px;
   }
-  
+
   .interiorRightSection {
     width: 100%;
   }
@@ -354,4 +354,58 @@
 
 /*for mobile portrait mode only*/
 
-/* @media only screen and (max-width: 480px) {} */
+@media only screen and (max-width: 480px) {
+  .mainParaText {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .projectGridSection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+
+  .interiorLeftSection>p:nth-child(1) {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .aboutUpperSection {
+    margin-bottom: 20px;
+  }
+
+  .aboutUpperSection>div>img {
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .aboutLowerSection>div:nth-child(1) {
+    gap: 10px;
+  }
+  
+  .aboutLowerSection>div:nth-child(1)>div>p:nth-child(1) {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .aboutLowerSection>div:nth-child(1)>div>p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .serviceSection .container>div:nth-child(1)>p:nth-child(1),
+  .serviceSection .container>div:nth-child(1)>p:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  
+  .serviceSection .container>div:nth-child(1)>p:nth-child(3) {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  
+  .serviceGridSection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
