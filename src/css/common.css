@@ -1,9 +1,9 @@
 :root {
   --themeColor: #48408c;
   --darkThemeColor: #121023;
-  --lightBlueColor: #0066FF;
+  --lightBlueColor: #0066ff;
   --darkBlueColor: #000099;
-  --yellowColor: #FFF272;
+  --yellowColor: #fff272;
   --whiteColor: white;
   --blackColor: #404040;
   --grayColor: gray;
@@ -63,7 +63,7 @@
 
 .blueGhostButton:hover {
   background: var(--lightBlueColor);
-  border: 1px solid #0066FF;
+  border: 1px solid #0066ff;
   color: var(--whiteColor);
 }
 
@@ -106,7 +106,7 @@
   border-radius: 5px;
 }
 
-.heroEmailForm>input::placeholder {
+.heroEmailForm > input::placeholder {
   color: var(--whiteColor);
 }
 

@@ -27,11 +27,11 @@
   text-align: center;
 }
 
-.contactGridDiv>div>img {
+.contactGridDiv > div > img {
   width: 40px;
 }
 
-.contactGridDiv>p:nth-child(2) {
+.contactGridDiv > p:nth-child(2) {
   font-weight: bold;
   margin: 10px 0px;
 }
@@ -40,11 +40,11 @@
   width: 100%;
 }
 
-.rightSection>p:nth-child(2) {
+.rightSection > p:nth-child(2) {
   margin: 10px 0px 30px 0px;
 }
 
-.rightSection>form {
+.rightSection > form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -57,7 +57,7 @@
   gap: 20px;
 }
 
-.socialSection>div {
+.socialSection > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +66,7 @@
   padding: 10px;
 }
 
-.socialSection>div>img {
+.socialSection > div > img {
   width: 40px;
 }
 
@@ -76,53 +76,94 @@
     padding: 15px;
   }
 
-  .contactGridDiv>div>img {
+  .contactGridDiv > div > img {
     width: 30px;
   }
 
-  .contactGridDiv>p:nth-child(2) {
+  .contactGridDiv > p:nth-child(2) {
     font-weight: bold;
     margin: 10px 0px;
     font-size: 13px;
   }
 
-  .contactGridDiv>p:nth-child(3) {
+  .contactGridDiv > p:nth-child(3) {
     font-size: 14px;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
   .contactUsDiv {
     flex-direction: column-reverse;
   }
-  
+
   .leftSection {
     width: 100%;
   }
-  
+
   .rightSection {
     width: 100%;
     margin-bottom: 30px;
   }
-  
+
   .contactGridSection {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-bottom: 20px;
   }
-  
+
   .contactGridDiv {
-    background-color: var(--darkBlueColor);
-    color: white;
     min-width: 200px;
     padding: 20px;
     border-radius: 10px;
+  }
+
+  .contactGridDiv > div > img {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contactUsDiv {
+    display: flex;
+    gap: 0px;
+  }
+
+  .socialSection {
+    gap: 10px;
+  }
+
+  .socialSection > div {
+    gap: 5px;
+    font-size: small;
+  }
+
+  .socialSection > div > img {
+    width: 20px;
+  }
+
+  .contactGridSection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contactGridDiv {
+    padding: 10px;
+    border-radius: 10px;
     text-align: center;
   }
-  
-  .contactGridDiv>div>img {
-    width: 40px;
+
+  .contactGridDiv > div > img {
+    width: 20px;
+  }
+
+  .contactGridDiv > p:nth-child(2) {
+    font-weight: bold;
+    margin: 5px 0px 10px 0px;
+    font-size: 13px;
+  }
+
+  .contactGridDiv > p:nth-child(3) {
+    font-size: 14px;
   }
 }
