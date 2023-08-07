@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.aboutUsImageSection>p {
+.aboutUsImageSection > p {
   border-bottom: 2px solid white;
   padding: 0px 75px;
 }
@@ -20,15 +20,15 @@
   gap: 40px;
 }
 
-.textSectionDiv>div {
+.textSectionDiv > div {
   width: 50%;
 }
 
-.textSectionDiv>div>img {
+.textSectionDiv > div > img {
   width: 100%;
 }
 
-.textSectionDiv>div:nth-child(2)>p:nth-child(1) {
+.textSectionDiv > div:nth-child(2) > p:nth-child(1) {
   margin-bottom: 30px;
 }
 
@@ -42,10 +42,9 @@
     height: 400px;
   }
 
-  .aboutUsImageSection>p {
+  .aboutUsImageSection > p {
     padding: 0px 40px;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -53,7 +52,7 @@
     height: 200px;
   }
 
-  .aboutUsImageSection>p {
+  .aboutUsImageSection > p {
     padding: 0px 30px;
     font-size: 30px;
   }
@@ -62,24 +61,24 @@
     flex-direction: column;
   }
 
-  .textSectionDiv>div {
+  .textSectionDiv > div {
     width: 100%;
   }
 
-  .textSectionDiv>div:nth-child(1) {
+  .textSectionDiv > div:nth-child(1) {
     text-align: center;
   }
 
-  .textSectionDiv>div:nth-child(2)>p:nth-child(1) {
+  .textSectionDiv > div:nth-child(2) > p:nth-child(1) {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .textSectionDiv>div:nth-child(2)>p:nth-child(2) {
+  .textSectionDiv > div:nth-child(2) > p:nth-child(2) {
     text-align: justify;
   }
 
-  .textSectionDiv>div>img {
+  .textSectionDiv > div > img {
     width: 75%;
   }
 
@@ -87,7 +86,39 @@
     margin: 40px 0px;
   }
 
-  .textSectionDiv>div:nth-child(2)>p:nth-child(1) {
+  .textSectionDiv > div:nth-child(2) > p:nth-child(1) {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutUsImageSection {
+    height: 150px;
+  }
+
+  .aboutUsImageSection > p {
+    border-bottom: 1px solid white;
+    padding: 0px 20px;
+    font-size: 20px;
+  }
+
+  .textSectionDiv > div > img {
+    width: 50%;
+  }
+
+  .textSectionDiv {
+    gap: 20px;
+  }
+
+  .textSectionDiv > div {
+    width: 100%;
+  }
+
+  .textSectionDiv > div:nth-child(2) > p:nth-child(1) {
+    margin-bottom: 10px;
+  }
+
+  .textSectionDiv > div:nth-child(2) > p:nth-child(2) {
+    width: 100%;
   }
 }
