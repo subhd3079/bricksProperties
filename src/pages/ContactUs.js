@@ -142,6 +142,7 @@ function ContactUs() {
                 value={inputs.message_box || ""}
                 onChange={handleChange}
               ></textarea>
+
               <button className="blueSolidButton" type="submit" value="Send">
                 Send Message
               </button>

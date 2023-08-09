@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
@@ -12,6 +14,28 @@ import { NavLink } from "react-router-dom";
 
 function Home() {
   const [loading, setLoading] = useState(true);
+  const [input, setInput] = useState("");
+  const form = useRef();
+
+  const handleChange = (event) => {
+    const value = event.target.value;
+    setInput(value);
+  }
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_v2em0be', 'template_7vzncqj', form.current, 'ZgaC7KkPtuUPjnCAl')
+      .then((result) => {
+        console.log(result.text);
+
+        setInput("")
+
+        alert("Your message has been sent (Thank You).");
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
   useEffect(() => {
     setLoading(false);
@@ -24,7 +48,7 @@ function Home() {
       {/* hero section */}
       <section className="heroSection" id="home">
         <Navbar />
-        
+
         <div className="firstContainer">
           <div className="mainSection">
             <div className="mainImageSection">
@@ -40,9 +64,17 @@ function Home() {
               <p className="whitePara mainParaText">
                 Welcome to our real estate platform, where your dreams of finding the perfect home becomes the reality
               </p>
-              <form className="heroEmailForm">
-                <input type="email" name="" placeholder="Email" className="whiteInputSection" />
-                <button type="submit" className="yellowSolidButton">Contact</button>
+              <form className="heroEmailForm" ref={form} onSubmit={sendEmail}>
+                <input
+                  type="text"
+                  placeholder="Email / Contact No. *" className="whiteInputSection"
+                  name="name_input"
+                  value={input || ""}
+                  onChange={handleChange}
+                  required
+                />
+
+                <button type="submit" value="Send" className="yellowSolidButton">Send</button>
               </form>
             </div>
           </div>

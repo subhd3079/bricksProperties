@@ -104,10 +104,11 @@
   padding: 10px 20px;
   border: 1px solid var(--whiteColor);
   border-radius: 5px;
+  color: var(--lavenderColor);
 }
 
-.heroEmailForm > input::placeholder {
-  color: var(--whiteColor);
+.whiteInputSection>input::placeholder {
+  color: var(--grayColor);
 }
 
 .blackInputSection {
