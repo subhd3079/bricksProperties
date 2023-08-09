@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import React, { useRef } from 'react';
@@ -12,17 +13,28 @@ import "../css/contactUs.css";
 
 function ContactUs() {
   const { pathname } = useLocation();
-
+  const [inputs, setInputs] = useState({});
   const form = useRef();
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInputs(values => ({ ...values, [name]: value }))
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_v2em0be', 'template_7vzncqj', form.current, 'ZgaC7KkPtuUPjnCAl')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
+
+        const name = e.target.name;
+        setInputs({ [name]: "" })
+
+        alert("Your message has been sent (Thank You).");
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
   };
 
@@ -94,19 +106,41 @@ function ContactUs() {
             <form ref={form} onSubmit={sendEmail}>
               <input
                 className="blackInputSection"
-                placeholder="Name"
+                placeholder="Name *"
                 type="text"
-                name="user_name"
+                name="name_input"
+                value={inputs.name_input || ""}
+                onChange={handleChange}
+                required
               />
+
               <input
                 className="blackInputSection"
-                placeholder="Email"
+                placeholder="Email *"
                 type="email"
-                name="user_email"
+                name="email_input"
+                value={inputs.email_input || ""}
+                onChange={handleChange}
+                required
               />
+
+              <input
+                className="blackInputSection"
+                placeholder="Contact No (Optional but Recommended)"
+                type="number"
+                name="mobile_input"
+                value={inputs.mobile_input || ""}
+                onChange={handleChange}
+                min="1000000000"
+                max="9999999999"
+                maxLength="10"
+              />
+
               <textarea
                 placeholder="Type Your Message Here..."
-                name="message"
+                name="message_box"
+                value={inputs.message_box || ""}
+                onChange={handleChange}
               ></textarea>
               <button className="blueSolidButton" type="submit" value="Send">
                 Send Message
