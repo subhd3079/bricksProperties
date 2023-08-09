@@ -5,19 +5,19 @@ import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import "../css/common.css"
-import "../css/interior.css"
+import "../css/common.css";
+import "../css/interior.css";
 
-import interiorData from "../data/interiorData"
+import interiorData from "../data/interiorData";
 
 function Interior() {
   const [loading, setLoading] = useState(true);
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     setLoading(false);
     window.scrollTo(0, 0);
-  }, [pathname])
+  }, [pathname]);
 
   return (
     <div className="interior" id="interior">
@@ -26,26 +26,37 @@ function Interior() {
       </div>
 
       <div className="interiorImageSection">
-        <p className="whiteBigText">Turning a House<br />into a Home</p>
+        <div><img src="" /></div>
+        <p className="whiteBigText">
+          Turning a House
+          <br />
+          into a Home
+        </p>
       </div>
 
       <div className="container">
         <div className="interiorGridSection">
-          {loading ? <Loader /> : interiorData.map(ele => (
-            <div className="interiorGridDiv" key={ele.title}>
-              <div><img src={ele.image} /></div>
-              <div>
-                <p className="darkBlueSmallText">{ele.title}</p>
-                <p className="blackSmallText">{ele.des}</p>
+          {loading ? (
+            <Loader />
+          ) : (
+            interiorData.map((ele) => (
+              <div className="interiorGridDiv" key={ele.title}>
+                <div>
+                  <img src={ele.image} />
+                </div>
+                <div>
+                  <p className="darkBlueSmallText">{ele.title}</p>
+                  <p className="blackSmallText">{ele.des}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
 
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Interior
+export default Interior;
