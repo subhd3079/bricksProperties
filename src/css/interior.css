@@ -5,7 +5,7 @@
   height: 500px;
 }
 
-.interiorImageSection > p {
+.interiorImageSection>p {
   color: var(--lightBlueColor);
   width: 300px;
   position: relative;
@@ -25,16 +25,20 @@
   background-color: var(--lavenderColor);
 }
 
-.interiorGridDiv > div:nth-child(1) > img {
+.interiorGridDiv>div:nth-child(1)>img {
   width: 100%;
 }
 
-.interiorGridDiv > div:nth-child(2) {
+.interiorGridDiv>div:nth-child(2) {
   padding: 30px;
 }
 
-.interiorGridDiv > div:nth-child(2) > p {
+.interiorGridDiv>div:nth-child(2)>p {
   margin: 10px 0px;
+}
+
+.blueBellLogo>img {
+  width: 100px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -48,12 +52,12 @@
     height: 200px;
   }
 
-  .interiorImageSection > p {
+  .interiorImageSection>p {
     width: 200px;
     font-size: 25px;
   }
 
-  .interiorGridDiv > div:nth-child(2) {
+  .interiorGridDiv>div:nth-child(2) {
     padding: 10px;
   }
 }
@@ -63,7 +67,7 @@
     height: 150px;
   }
 
-  .interiorImageSection > p {
+  .interiorImageSection>p {
     font-size: 20px;
     width: 200px;
     left: 15%;
@@ -75,11 +79,11 @@
     gap: 20px;
   }
 
-  .interiorGridDiv > div:nth-child(2) {
+  .interiorGridDiv>div:nth-child(2) {
     padding: 10px;
   }
 
-  .interiorGridDiv > div:nth-child(2) > p {
+  .interiorGridDiv>div:nth-child(2)>p {
     margin: 10px 0px;
   }
 }

@@ -26,7 +26,7 @@ function Interior() {
       </div>
 
       <div className="interiorImageSection">
-        <div><img src="" /></div>
+        <div className="blueBellLogo"><img src="https://i.ibb.co/7ns1JpC/blue-Bell-Logo.jpg" /></div>
         <p className="whiteBigText">
           Turning a House
           <br />
