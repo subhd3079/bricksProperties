@@ -2,7 +2,7 @@
   background-image: url("https://i.ibb.co/mytdDf8/about-Page-Image.jpg");
   background-position: center;
   background-size: cover;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@
 
 @media only screen and (max-width: 992px) {
   .aboutUsImageSection {
-    height: 400px;
+    height: 300px;
   }
 
   .aboutUsImageSection > p {

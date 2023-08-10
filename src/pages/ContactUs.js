@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
@@ -19,23 +19,32 @@ function ContactUs() {
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setInputs(values => ({ ...values, [name]: value }))
-  }
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_v2em0be', 'template_7vzncqj', form.current, 'ZgaC7KkPtuUPjnCAl')
-      .then((result) => {
-        console.log(result.text);
+    emailjs
+      .sendForm(
+        "service_v2em0be",
+        "template_7vzncqj",
+        form.current,
+        "ZgaC7KkPtuUPjnCAl"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
 
-        const name = e.target.name;
-        setInputs({ [name]: "" })
+          const name = e.target.name;
+          setInputs({ [name]: "" });
 
-        alert("Your message has been sent (Thank You).");
-      }, (error) => {
-        console.log(error.text);
-      });
+          alert("Your message has been sent (Thank You).");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   useEffect(() => {
@@ -150,23 +159,35 @@ function ContactUs() {
 
             <div className="socialSection">
               <div>
-                <img src="https://i.ibb.co/PmB1mq5/facebook.png" />
-                <p>Facebook</p>
+                <a
+                  href="https://www.facebook.com/bpropertieshomes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="https://i.ibb.co/PmB1mq5/facebook.png" />
+                  <p>Facebook</p>
+                </a>
               </div>
 
               <div>
-                <img src="https://i.ibb.co/HDrYCTw/instagram.png" />
-                <p>Instagram</p>
+                <a>
+                  <img src="https://i.ibb.co/HDrYCTw/instagram.png" />
+                  <p>Instagram</p>
+                </a>
               </div>
 
               <div>
-                <img src="https://i.ibb.co/Y0zmV1r/linkedin.png" />
-                <p>Linked In</p>
+                <a>
+                  <img src="https://i.ibb.co/Y0zmV1r/linkedin.png" />
+                  <p>Linked In</p>
+                </a>
               </div>
 
               <div>
-                <img src="https://i.ibb.co/GVHCfqc/twitter.png" />
-                <p>Twitter</p>
+                <a>
+                  <img src="https://i.ibb.co/GVHCfqc/twitter.png" />
+                  <p>Twitter</p>
+                </a>
               </div>
             </div>
           </div>
