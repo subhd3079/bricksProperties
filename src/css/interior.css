@@ -3,14 +3,28 @@
   background-position: center;
   background-size: cover;
   height: 500px;
+  padding-top: 100px;
 }
 
-.interiorImageSection>p {
-  color: var(--lightBlueColor);
-  width: 300px;
-  position: relative;
-  left: 20%;
-  top: 25%;
+.blueBellLogo {
+  width: 500px;
+  text-align: right;
+}
+
+.blueBellLogo > img {
+  width: 200px;
+  border: 1px solid var(--darkBlackColor);
+}
+
+.interiorTitle {
+  background: rgb(0, 0, 0, 0.5);
+  width: 500px;
+  padding: 20px 30px;
+}
+
+.interiorTitle > p {
+  text-align: right;
+  opacity: 0.9;
 }
 
 .interiorGridSection {
@@ -25,39 +39,62 @@
   background-color: var(--lavenderColor);
 }
 
-.interiorGridDiv>div:nth-child(1)>img {
+.interiorGridDiv > div:nth-child(1) > img {
   width: 100%;
 }
 
-.interiorGridDiv>div:nth-child(2) {
+.interiorGridDiv > div:nth-child(2) {
   padding: 30px;
 }
 
-.interiorGridDiv>div:nth-child(2)>p {
+.interiorGridDiv > div:nth-child(2) > p {
   margin: 10px 0px;
-}
-
-.blueBellLogo>img {
-  width: 100px;
 }
 
 @media only screen and (max-width: 992px) {
   .interiorImageSection {
     height: 400px;
+    padding-top: 75px;
+  }
+
+  .blueBellLogo {
+    width: 400px;
+  }
+
+  .interiorTitle {
+    width: 400px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .interiorImageSection {
     height: 200px;
+    padding-top: 25px;
   }
 
-  .interiorImageSection>p {
-    width: 200px;
+  .blueBellLogo {
+    width: 250px;
+  }
+
+  .blueBellLogo > img {
+    width: 100px;
+    border: 1px solid var(--darkBlackColor);
+  }
+
+  .interiorTitle {
+    width: 250px;
+    padding: 10px 20px;
+  }
+
+  .interiorTitle > p {
     font-size: 25px;
   }
 
-  .interiorGridDiv>div:nth-child(2) {
+  .interiorGridSection {
+    gap: 20px;
+  }
+
+  .interiorGridDiv > div:nth-child(2) {
     padding: 10px;
   }
 }
@@ -65,13 +102,25 @@
 @media only screen and (max-width: 480px) {
   .interiorImageSection {
     height: 150px;
+    padding-top: 20px;
   }
 
-  .interiorImageSection>p {
-    font-size: 20px;
-    width: 200px;
-    left: 15%;
-    top: 15%;
+  .blueBellLogo {
+    width: 150px;
+  }
+
+  .blueBellLogo > img {
+    width: 75px;
+    border: 1px solid var(--darkBlackColor);
+  }
+
+  .interiorTitle {
+    width: 150px;
+    padding: 5px 10px;
+  }
+
+  .interiorTitle > p {
+    font-size: 18px;
   }
 
   .interiorGridSection {
@@ -79,11 +128,11 @@
     gap: 20px;
   }
 
-  .interiorGridDiv>div:nth-child(2) {
+  .interiorGridDiv > div:nth-child(2) {
     padding: 10px;
   }
 
-  .interiorGridDiv>div:nth-child(2)>p {
+  .interiorGridDiv > div:nth-child(2) > p {
     margin: 10px 0px;
   }
 }
