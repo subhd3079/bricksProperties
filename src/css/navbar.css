@@ -10,6 +10,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.logoSection {
+  overflow: hidden;
+}
 
 .logoSection img {
   width: 170px;
@@ -75,7 +78,7 @@
     cursor: pointer;
   }
 
-  .menuButton>img {
+  .menuButton > img {
     width: 100%;
   }
 
