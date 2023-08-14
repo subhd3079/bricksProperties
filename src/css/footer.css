@@ -3,12 +3,17 @@
   color: var(--whiteColor);
 }
 
-.footer>.container>div {
+.footer > .container > div {
   display: flex;
   gap: 20px;
 }
 
-.footerLogo>img {
+.footerLogo {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.footerLogo > img {
   width: 150px;
   margin-top: -30px;
   margin-left: -40px;
@@ -21,7 +26,7 @@
   align-items: flex-start;
 }
 
-.contactDetails>img {
+.contactDetails > img {
   width: 20px;
 }
 
@@ -46,12 +51,12 @@
   gap: 10px;
 }
 
-.socialLinksDiv>img {
+.socialLinksDiv > img {
   width: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  .footer>.container>div {
+  .footer > .container > div {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -59,13 +64,13 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .footer>.container>div {
+  .footer > .container > div {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
   }
 
-  .footerLogo>img {
+  .footerLogo > img {
     width: 100px;
     margin-top: -10px;
     margin-left: -20px;
