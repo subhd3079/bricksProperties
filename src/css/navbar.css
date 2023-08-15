@@ -11,13 +11,8 @@
   align-items: center;
 }
 
-.logoSection {
-  overflow: hidden;
-}
-
 .logoSection img {
   width: 170px;
-  margin-left: -15px;
 }
 
 .menuSection {
@@ -136,7 +131,7 @@
   }
 
   .logoSection img {
-    width: 130px;
+    width: 135px;
   }
 
   .menuButton {

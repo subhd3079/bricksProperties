@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -45,6 +46,12 @@ function Home() {
         }
       );
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     setLoading(false);
@@ -168,7 +175,7 @@ function Home() {
         <div className="container">
           <div className="aboutUpperSection">
             <div>
-              <img src="https://i.ibb.co/5YgGRyJ/about-Section-Image.jpg" />
+              {/* <img src={require("../images/aboutSectionImage.jpg")} /> */}
             </div>
             <div>
               <p className="yellowSmallText">About Us</p>
@@ -212,9 +219,9 @@ function Home() {
               A Valuable Investment for You & Your Family
             </p>
             <p className="blackPara">
-              Orci feugiat aptent est cum sociosqu cubilia. Ridiculus vivamus
-              donec tortor metus penatibus metus. Ultricies. Adipiscing pede
-              purus per pede.
+              Transform your property dreams into reality with our expert
+              services, guiding you through every step of buying, selling, or
+              renting with confidence.
             </p>
           </div>
 

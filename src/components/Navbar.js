@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import "../css/common.css";
 import "../css/navbar.css";
 import { HashLink } from "react-router-hash-link";
+// import { images } from "../images";
+// const images = require.context("../images", true);
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -24,8 +26,8 @@ function Navbar() {
   };
 
   const activeStyle = {
-    borderBottom: "2px solid white"
-  }
+    borderBottom: "2px solid white",
+  };
 
   const inActiveStyle = {
     borderBottom: "2px solid transparent",
@@ -40,13 +42,11 @@ function Navbar() {
       <div className="navbar">
         <div className="logoSection">
           <NavLink to="/">
-            <img src="https://i.ibb.co/0ChKc66/fullLogo.png" />
+            {/* <img src={require("../images/fullLogo.png")} /> */}
           </NavLink>
         </div>
         <div className="menuSection">
-          <NavLink to="/">
-            Home
-          </NavLink>
+          <NavLink to="/">Home</NavLink>
           <HashLink smooth to="/#properties">
             Properties
           </HashLink>

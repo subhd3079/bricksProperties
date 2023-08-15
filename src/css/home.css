@@ -44,7 +44,7 @@
   gap: 10px;
 }
 
-.heroEmailForm>input {
+.heroEmailForm > input {
   width: 60%;
 }
 
@@ -67,15 +67,15 @@
   margin-bottom: 40px;
 }
 
-.projectGridSection>div {
+.projectGridSection > div {
   text-align: center;
 }
 
-.projectGridSection>div>div {
+.projectGridSection > div > div {
   margin-bottom: 10px;
 }
 
-.projectGridSection>div>div>img {
+.projectGridSection > div > div > img {
   width: 100%;
   height: 200px;
   border-radius: 5px;
@@ -98,20 +98,20 @@
   margin-bottom: 40px;
 }
 
-.aboutUpperSection>div:nth-child(1) {
+.aboutUpperSection > div:nth-child(1) {
   width: 65%;
 }
 
-.aboutUpperSection>div:nth-child(2) {
+.aboutUpperSection > div:nth-child(2) {
   width: 30%;
 }
 
-.aboutUpperSection>div>img {
+.aboutUpperSection > div > img {
   width: 100%;
   border-radius: 75px;
 }
 
-.aboutUpperSection>div:nth-child(2)>p:nth-child(1) {
+.aboutUpperSection > div:nth-child(2) > p:nth-child(1) {
   margin-bottom: 20px;
 }
 
@@ -120,26 +120,26 @@
   justify-content: space-between;
 }
 
-.aboutLowerSection>div:nth-child(1) {
+.aboutLowerSection > div:nth-child(1) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.aboutLowerSection>div:nth-child(1)>div {
+.aboutLowerSection > div:nth-child(1) > div {
   background-color: lavender;
   padding: 15px 20px;
   border-radius: 10px;
 }
 
-.aboutLowerSection>div:nth-child(1)>div>p:nth-child(1) {
+.aboutLowerSection > div:nth-child(1) > div > p:nth-child(1) {
   font-size: 30px;
   font-family: rowdies;
   color: var(--grayColor);
   margin-bottom: 15px;
 }
 
-.aboutLowerSection>div:nth-child(2) {
+.aboutLowerSection > div:nth-child(2) {
   display: flex;
   align-items: flex-end;
 }
@@ -160,13 +160,13 @@
   width: 15%;
 }
 
-.interiorLeftSection>p:nth-child(1) {
+.interiorLeftSection > p:nth-child(1) {
   position: relative;
   width: 300px;
   margin-bottom: 20px;
 }
 
-.interiorLeftSection>p:nth-child(2) {
+.interiorLeftSection > p:nth-child(2) {
   margin-bottom: 50px;
 }
 
@@ -174,7 +174,7 @@
   width: 80%;
 }
 
-.interiorRightSection>img {
+.interiorRightSection > img {
   width: 100%;
 }
 
@@ -184,12 +184,12 @@
   text-align: center;
 }
 
-.serviceSection .container>div:nth-child(1)>p:nth-child(1),
-.serviceSection .container>div:nth-child(1)>p:nth-child(2) {
+.serviceSection .container > div:nth-child(1) > p:nth-child(1),
+.serviceSection .container > div:nth-child(1) > p:nth-child(2) {
   margin-bottom: 20px;
 }
 
-.serviceSection .container>div:nth-child(1)>p:nth-child(3) {
+.serviceSection .container > div:nth-child(1) > p:nth-child(3) {
   width: 70%;
   margin: auto;
   margin-bottom: 60px;
@@ -201,27 +201,27 @@
   gap: 40px;
 }
 
-.serviceGridSection>div {
+.serviceGridSection > div {
   padding: 30px 20px;
 }
 
-.serviceGridSection>div:nth-child(odd) {
+.serviceGridSection > div:nth-child(odd) {
   box-shadow: 0px 0px 5px gray;
 }
 
-.serviceGridSection>div:nth-child(even) {
+.serviceGridSection > div:nth-child(even) {
   background-color: lavender;
 }
 
-.serviceGridSection>div>div {
+.serviceGridSection > div > div {
   margin-bottom: 10px;
 }
 
-.serviceGridSection>div>p:nth-child(2) {
+.serviceGridSection > div > p:nth-child(2) {
   margin-bottom: 10px;
 }
 
-.serviceGridSection>div>div>img {
+.serviceGridSection > div > div > img {
   width: 80px;
 }
 
@@ -262,13 +262,17 @@
     width: 100%;
   }
 
-  .mainImageSection>img {
+  .mainImageSection > img {
     width: 75%;
   }
 
   .mainTextSection {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .mainYellowText {
+    margin-top: 10px;
   }
 
   .mainParaText {
@@ -281,7 +285,7 @@
     flex-direction: column;
   }
 
-  .heroEmailForm>input {
+  .heroEmailForm > input {
     width: 100%;
     text-align: center;
   }
@@ -296,16 +300,16 @@
     text-align: center;
   }
 
-  .aboutUpperSection>div:nth-child(1) {
+  .aboutUpperSection > div:nth-child(1) {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .aboutUpperSection>div:nth-child(2) {
+  .aboutUpperSection > div:nth-child(2) {
     width: 100%;
   }
 
-  .aboutUpperSection>div>img {
+  .aboutUpperSection > div > img {
     width: 75%;
     border-radius: 75px;
   }
@@ -316,11 +320,11 @@
     flex-direction: column;
   }
 
-  .aboutLowerSection>div:nth-child(1) {
+  .aboutLowerSection > div:nth-child(1) {
     margin-bottom: 20px;
   }
 
-  .aboutLowerSection>div:nth-child(2) {
+  .aboutLowerSection > div:nth-child(2) {
     justify-content: center;
   }
 
@@ -334,12 +338,12 @@
     margin-bottom: 30px;
   }
 
-  .interiorLeftSection>p:nth-child(1) {
+  .interiorLeftSection > p:nth-child(1) {
     margin: auto;
     margin-bottom: 15px;
   }
 
-  .interiorLeftSection>p:nth-child(2) {
+  .interiorLeftSection > p:nth-child(2) {
     margin-bottom: 20px;
   }
 
@@ -366,7 +370,7 @@
     margin-bottom: 25px;
   }
 
-  .interiorLeftSection>p:nth-child(1) {
+  .interiorLeftSection > p:nth-child(1) {
     position: relative;
     width: 100%;
     margin-bottom: 10px;
@@ -376,36 +380,43 @@
     margin-bottom: 20px;
   }
 
-  .aboutUpperSection>div>img {
+  .aboutUpperSection > div > img {
     width: 100%;
     border-radius: 50px;
   }
 
-  .aboutLowerSection>div:nth-child(1) {
+  .aboutLowerSection > div:nth-child(1) {
     gap: 10px;
   }
-  
-  .aboutLowerSection>div:nth-child(1)>div>p:nth-child(1) {
+
+  .aboutLowerSection > div:nth-child(1) > div > p:nth-child(1) {
     font-size: 20px;
     margin-bottom: 8px;
   }
 
-  .aboutLowerSection>div:nth-child(1)>div>p:nth-child(2) {
+  .aboutLowerSection > div:nth-child(1) > div > p:nth-child(2) {
     font-size: 12px;
   }
 
-  .serviceSection .container>div:nth-child(1)>p:nth-child(1),
-  .serviceSection .container>div:nth-child(1)>p:nth-child(2) {
+  .serviceSection .container > div:nth-child(1) > p:nth-child(1),
+  .serviceSection .container > div:nth-child(1) > p:nth-child(2) {
     margin-bottom: 10px;
   }
-  
-  .serviceSection .container>div:nth-child(1)>p:nth-child(3) {
+
+  .serviceSection .container > div:nth-child(1) > p:nth-child(3) {
     width: 90%;
     margin-bottom: 30px;
   }
-  
+
   .serviceGridSection {
-    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+
+  .serviceGridSection > div {
+    padding: 10px 5px;
+  }
+
+  .serviceGridSection > div > p:nth-child(3) {
+    display: none;
   }
 }

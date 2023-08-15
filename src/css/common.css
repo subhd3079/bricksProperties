@@ -108,7 +108,7 @@
   color: var(--lavenderColor);
 }
 
-.whiteInputSection>input::placeholder {
+.whiteInputSection > input::placeholder {
   color: var(--grayColor);
 }
 
