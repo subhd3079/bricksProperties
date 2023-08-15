@@ -10,7 +10,7 @@ function Footer() {
         <div>
           <div>
             <NavLink to="/" className="footerLogo">
-              <img src="../images/onlyLogo.png" />
+              {/* <img src={require("../images/onlyLogo.png")} /> */}
             </NavLink>
             <div className="contactDetails">
               <img src="https://i.ibb.co/QDZ7YPN/callBlue.png" />
@@ -30,23 +30,36 @@ function Footer() {
           </div>
           <div>
             <p className="footerHeading">Quick Links</p>
-            <a href="#" className="footerLink">
+            <NavLink to="/privacyPolicy" className="footerLink">
               Privacy Policy
-            </a>
-            <a href="#" className="footerLink">
+            </NavLink>
+            <NavLink to="/termsConditions" className="footerLink">
               Terms & Conditions
-            </a>
-            <a href="#" className="footerLink">
+            </NavLink>
+            <NavLink to="/faqs" className="footerLink">
               FAQs
-            </a>
+            </NavLink>
           </div>
           <div>
             <p className="footerHeading">Follow Us</p>
             <div className="socialLinksDiv">
-              <img src="https://i.ibb.co/PmB1mq5/facebook.png" />
-              <img src="https://i.ibb.co/HDrYCTw/instagram.png" />
-              <img src="https://i.ibb.co/Y0zmV1r/linkedin.png" />
-              <img src="https://i.ibb.co/GVHCfqc/twitter.png" />
+              <a
+                href="https://www.facebook.com/bpropertieshomes"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="https://i.ibb.co/PmB1mq5/facebook.png" />
+              </a>
+
+              <a href="">
+                <img src="https://i.ibb.co/HDrYCTw/instagram.png" />
+              </a>
+              <a href="">
+                <img src="https://i.ibb.co/Y0zmV1r/linkedin.png" />
+              </a>
+              <a href="">
+                <img src="https://i.ibb.co/GVHCfqc/twitter.png" />
+              </a>
             </div>
           </div>
         </div>

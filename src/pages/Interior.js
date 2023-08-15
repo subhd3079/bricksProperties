@@ -27,7 +27,7 @@ function Interior() {
 
       <div className="interiorImageSection">
         <div className="blueBellLogo">
-          <img src="https://i.ibb.co/s6bbNGF/blue-Bell-Logo.jpg" />
+          {/* <img src={require("../images/blueBellLogo.jpg")} /> */}
         </div>
         <div className="interiorTitle">
           <p className="whiteBigText">
