@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom";
 import "../css/common.css";
 import "../css/navbar.css";
 import { HashLink } from "react-router-hash-link";
-// import { images } from "../images";
-// const images = require.context("../images", true);
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -42,7 +40,7 @@ function Navbar() {
       <div className="navbar">
         <div className="logoSection">
           <NavLink to="/">
-            {/* <img src={require("../images/fullLogo.png")} /> */}
+            <img src={require("../images/icons/fullLogo.png")} />
           </NavLink>
         </div>
         <div className="menuSection">

@@ -1,10 +1,4 @@
-.textSection,
-h3 {
-  margin-top: 0px;
-}
-
-.textSection,
-h3 {
+.textSection h3 {
   margin-top: 30px;
 }
 
@@ -14,4 +8,22 @@ h3 {
 
 .textSection p {
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .textSection h2 {
+    font-size: large;
+  }
+
+  .textSection h3 {
+    font-size: medium;
+  }
+
+  .textSection h4 {
+    font-size: small;
+  }
+
+  .textSection p {
+    font-size: smaller;
+  }
 }

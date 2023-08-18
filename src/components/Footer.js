@@ -63,6 +63,13 @@ function Footer() {
             </div>
           </div>
         </div>
+
+        <p
+          className="blackSmallText"
+          style={{ color: "gray", textAlign: "center", marginTop: "30px" }}
+        >
+          Empowering Dreams Through Homeownership - © 2023, Bricks Properties.
+        </p>
       </div>
     </div>
   );

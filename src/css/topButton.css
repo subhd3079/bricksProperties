@@ -1,0 +1,15 @@
+.topButton {
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
+  padding: 2px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid var(--blackColor);
+  font-size: 25px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
