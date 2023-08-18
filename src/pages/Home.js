@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import TopButton from "../components/TopButton";
 
 import "../css/common.css";
 import "../css/home.css";
@@ -59,6 +60,9 @@ function Home() {
 
   return (
     <div className="home">
+      {/* top button */}
+      <TopButton />
+
       {/* hero section */}
       <section className="heroSection" id="home">
         <Navbar />

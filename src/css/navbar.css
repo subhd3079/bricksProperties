@@ -60,10 +60,6 @@
     padding: 10px 30px;
   }
 
-  .menuSection {
-    display: none;
-  }
-
   .menuButton {
     display: inline-block;
     width: 40px;
@@ -107,7 +103,7 @@
 
   .menuSection {
     position: absolute;
-    top: 55px;
+    top: 45px;
     left: 0px;
     z-index: 1;
     width: 100%;
@@ -148,7 +144,10 @@
   }
 
   .menuSection {
-    top: 50px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 1;
   }
 
   .enableMenu {
