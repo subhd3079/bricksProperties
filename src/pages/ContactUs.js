@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import TopButton from "../components/TopButton";
 
 import "../css/common.css";
 import "../css/contactUs.css";
@@ -53,6 +54,9 @@ function ContactUs() {
 
   return (
     <div className="contactUS">
+      {/* top button */}
+      <TopButton />
+
       <div className="navbarColorSection">
         <Navbar />
       </div>

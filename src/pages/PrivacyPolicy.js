@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import TopButton from "../components/TopButton";
 
 import "../css/common.css";
 import "../css/privacyPolicy.css";
@@ -16,6 +17,9 @@ function PrivacyPolicy() {
 
   return (
     <div className="privacyPolicy">
+      {/* top button */}
+      <TopButton />
+
       <div className="navbarColorSection">
         <Navbar />
       </div>
