@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import TopButton from "../components/TopButton";
 
 import "../css/common.css";
 import "../css/interior.css";
@@ -21,6 +22,10 @@ function Interior() {
 
   return (
     <div className="interior" id="interior">
+
+    {/* top button */}
+    <TopButton />
+    
       <div className="navbarColorSection">
         <Navbar />
       </div>
