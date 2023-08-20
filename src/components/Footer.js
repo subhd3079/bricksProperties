@@ -13,15 +13,24 @@ function Footer() {
               {/* <img src={require("../images/onlyLogo.png")} /> */}
             </NavLink>
             <div className="contactDetails">
-              <img src="https://i.ibb.co/QDZ7YPN/callBlue.png" />
+              <img
+                src="https://i.ibb.co/QDZ7YPN/callBlue.png"
+                alt="Phone Icon"
+              />
               <p>+917699991135</p>
             </div>
             <div className="contactDetails">
-              <img src="https://i.ibb.co/dmkLGTT/mailBlue.png" />
+              <img
+                src="https://i.ibb.co/dmkLGTT/mailBlue.png"
+                alt="Mail Icon"
+              />
               <p>helpdeskbproperties@gmail.com</p>
             </div>
             <div className="contactDetails">
-              <img src="https://i.ibb.co/qFT8W88/location-Blue.png" />
+              <img
+                src="https://i.ibb.co/qFT8W88/location-Blue.png"
+                alt="Location Icon"
+              />
               <p>
                 A-64, S.S.B Sarani, Sector 2(C), Bank Colony More, Bidhanngar,
                 Durgapur, Paschim Bardhaman, West Bengal, 713312
@@ -48,17 +57,29 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="https://i.ibb.co/PmB1mq5/facebook.png" />
+                <img
+                  src="https://i.ibb.co/PmB1mq5/facebook.png"
+                  alt="Facebook Icon"
+                />
               </a>
 
               <a href="">
-                <img src="https://i.ibb.co/HDrYCTw/instagram.png" />
+                <img
+                  src="https://i.ibb.co/HDrYCTw/instagram.png"
+                  alt="Instagram Icon"
+                />
               </a>
               <a href="">
-                <img src="https://i.ibb.co/Y0zmV1r/linkedin.png" />
+                <img
+                  src="https://i.ibb.co/Y0zmV1r/linkedin.png"
+                  alt="Linkedin Icon"
+                />
               </a>
               <a href="">
-                <img src="https://i.ibb.co/GVHCfqc/twitter.png" />
+                <img
+                  src="https://i.ibb.co/GVHCfqc/twitter.png"
+                  alt="Twitter Icon"
+                />
               </a>
             </div>
           </div>

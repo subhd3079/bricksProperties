@@ -12,6 +12,7 @@ import "../css/common.css";
 import "../css/home.css";
 
 import projectData from "../data/projectData";
+import serviceData from "../data/serviceData";
 import { NavLink } from "react-router-dom";
 
 function Home() {
@@ -70,7 +71,10 @@ function Home() {
         <div className="firstContainer">
           <div className="mainSection">
             <div className="mainImageSection">
-              <img src="https://i.ibb.co/FznMXTC/main-Section-Image.png" />
+              <img
+                src="https://i.ibb.co/FznMXTC/main-Section-Image.png"
+                alt="Main Section Image"
+              />
             </div>
             <div className="mainTextSection">
               <p className="yellowSmallText mainYellowText">
@@ -133,7 +137,7 @@ function Home() {
               projectData.map((ele) => (
                 <div key={ele.name}>
                   <div>
-                    <img src={ele.image} />
+                    <img src={ele.image} alt={ele.alt} />
                   </div>
                   <p className="darkBlueSmallText">{ele.name}</p>
                   <p className="blackSmallText">{ele.place}</p>
@@ -157,9 +161,9 @@ function Home() {
             <div className="interiorLeftSection">
               <p className="lightBlueBigText">Modern Interior</p>
               <p className="blackSmallText">
-                Vehicula turpis aliquet facilisi dolor cras interdum lorem sed.
-                Ante, odio. Pretium ligula. Justo. Lectus nibh semper cubilia
-                suscipit className urna nostra natoque eros nam.
+                Step inside and feel at home. Our interiors are designed for
+                comfort and style, making every moment enjoyable. Discover a
+                space where beauty and function come together seamlessly.
               </p>
               <div>
                 <NavLink to="/interior">
@@ -168,7 +172,10 @@ function Home() {
               </div>
             </div>
             <div className="interiorRightSection">
-              <img src="https://i.ibb.co/2sBsvPD/interior-Section-Image.jpg" />
+              <img
+                src="https://i.ibb.co/2sBsvPD/interior-Section-Image.jpg"
+                at="Interior Section Image"
+              />
             </div>
           </div>
         </div>
@@ -179,7 +186,7 @@ function Home() {
         <div className="container">
           <div className="aboutUpperSection">
             <div>
-              {/* <img src={require("../images/aboutSectionImage.jpg")} /> */}
+              {/* <img src={require("../images/aboutSectionImage.jpg")} alt="About Section Image" /> */}
             </div>
             <div>
               <p className="yellowSmallText">About Us</p>
@@ -230,60 +237,19 @@ function Home() {
           </div>
 
           <div className="serviceGridSection">
-            <div>
-              <div>
-                <img src="https://i.ibb.co/rtXp0W6/home-Loan-Image.png" />
-              </div>
-              <p className="darkBlueSmallText">Home Loan</p>
-              <p className="blackSmallText">
-                Blandit dui hymenaeos torquent pede. A iaculis primis.
-              </p>
-            </div>
-            <div>
-              <div>
-                <img src="https://i.ibb.co/bNgY5DW/legal-Service-Image.png" />
-              </div>
-              <p className="darkBlueSmallText">Legal Services</p>
-              <p className="blackSmallText">
-                Blandit dui hymenaeos torquent pede. A iaculis primis.
-              </p>
-            </div>
-            <div>
-              <div>
-                <img src="https://i.ibb.co/FDn69X8/painting-Image.png" />
-              </div>
-              <p className="darkBlueSmallText">Painting</p>
-              <p className="blackSmallText">
-                Blandit dui hymenaeos torquent pede. A iaculis primis.
-              </p>
-            </div>
-            <div>
-              <div>
-                <img src="https://i.ibb.co/tBP2Xb1/vastu-Image.png" />
-              </div>
-              <p className="darkBlueSmallText">Vastu</p>
-              <p className="blackSmallText">
-                Blandit dui hymenaeos torquent pede. A iaculis primis.
-              </p>
-            </div>
-            <div>
-              <div>
-                <img src="https://i.ibb.co/kgP9vQ5/furniture-Image.png" />
-              </div>
-              <p className="darkBlueSmallText">Furniture & Appliances</p>
-              <p className="blackSmallText">
-                Blandit dui hymenaeos torquent pede. A iaculis primis.
-              </p>
-            </div>
-            <div>
-              <div>
-                <img src="https://i.ibb.co/8YBk3wQ/security-Image.png" />
-              </div>
-              <p className="darkBlueSmallText">Security & Support</p>
-              <p className="blackSmallText">
-                Blandit dui hymenaeos torquent pede. A iaculis primis.
-              </p>
-            </div>
+            {loading ? (
+              <Loader />
+            ) : (
+              serviceData.map((ele) => (
+                <div>
+                  <div>
+                    <img src={ele.image} alt={ele.alt} />
+                  </div>
+                  <p className="darkBlueSmallText">{ele.name}</p>
+                  <p className="blackSmallText">{ele.para}</p>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </section>

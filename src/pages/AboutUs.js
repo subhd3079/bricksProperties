@@ -34,7 +34,10 @@ function AboutUs() {
           <div className="container">
             <div className="textSectionDiv ourHistorySection">
               <div>
-                <img src="https://i.ibb.co/Thfwp0g/our-History-Image.jpg" />
+                <img
+                  src="https://i.ibb.co/Thfwp0g/our-History-Image.jpg"
+                  alt="Our History Image"
+                />
               </div>
               <div>
                 <p className="darkBlueBigText">Our History</p>
@@ -55,7 +58,10 @@ function AboutUs() {
 
             <div className="textSectionDiv ourVisionSection">
               <div>
-                <img src="https://i.ibb.co/hM3N450/our-Vision-Image.jpg" />
+                <img
+                  src="https://i.ibb.co/hM3N450/our-Vision-Image.jpg"
+                  alt="Our Vision Image"
+                />
               </div>
               <div>
                 <p className="darkBlueBigText">Our Vision</p>
@@ -76,7 +82,10 @@ function AboutUs() {
 
             <div className="textSectionDiv ourMissionSection">
               <div>
-                <img src="https://i.ibb.co/C75ks7M/our-Mission-Image.jpg" />
+                <img
+                  src="https://i.ibb.co/C75ks7M/our-Mission-Image.jpg"
+                  alt="Our Mission Image"
+                />
               </div>
               <div>
                 <p className="darkBlueBigText">Our Mission</p>

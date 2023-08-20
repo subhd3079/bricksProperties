@@ -67,14 +67,20 @@ function ContactUs() {
             <div className="contactGridSection">
               <div className="contactGridDiv">
                 <div>
-                  <img src="https://i.ibb.co/9tv7Gxv/call-Yellow.png" />
+                  <img
+                    src="https://i.ibb.co/9tv7Gxv/call-Yellow.png"
+                    alt="Phone Icon"
+                  />
                 </div>
                 <p>Phone</p>
                 <p>+917699991135</p>
               </div>
               <div className="contactGridDiv">
                 <div>
-                  <img src="https://i.ibb.co/dQy2nGr/time-Yellow.png" />
+                  <img
+                    src="https://i.ibb.co/dQy2nGr/time-Yellow.png"
+                    alt="Clock Icon"
+                  />
                 </div>
                 <p>Open Hours</p>
                 <p>
@@ -84,7 +90,10 @@ function ContactUs() {
               </div>
               <div className="contactGridDiv">
                 <div>
-                  <img src="https://i.ibb.co/Nypc75C/mail-Yellow.png" />
+                  <img
+                    src="https://i.ibb.co/Nypc75C/mail-Yellow.png"
+                    alt="Email Icon"
+                  />
                 </div>
                 <p>Email</p>
                 <p>
@@ -95,7 +104,10 @@ function ContactUs() {
               </div>
               <div className="contactGridDiv">
                 <div>
-                  <img src="https://i.ibb.co/zXM4J9r/location-Yellow.png" />
+                  <img
+                    src="https://i.ibb.co/zXM4J9r/location-Yellow.png"
+                    alt="Location Icon"
+                  />
                 </div>
                 <p>Location</p>
                 <p>
@@ -105,7 +117,10 @@ function ContactUs() {
               </div>
             </div>
             <div className="mapSection">
-              <img src="https://i.ibb.co/BPwYdd7/Screenshot-2023-07-26-191225.png" />
+              <img
+                src="https://i.ibb.co/BPwYdd7/Screenshot-2023-07-26-191225.png"
+                alt="Map Image"
+              />
             </div>
           </div>
 
@@ -168,28 +183,40 @@ function ContactUs() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="https://i.ibb.co/PmB1mq5/facebook.png" />
+                  <img
+                    src="https://i.ibb.co/PmB1mq5/facebook.png"
+                    alt="Facebook Icon"
+                  />
                   <p>Facebook</p>
                 </a>
               </div>
 
               <div>
                 <a>
-                  <img src="https://i.ibb.co/HDrYCTw/instagram.png" />
+                  <img
+                    src="https://i.ibb.co/HDrYCTw/instagram.png"
+                    alt="Instagram Icon"
+                  />
                   <p>Instagram</p>
                 </a>
               </div>
 
               <div>
                 <a>
-                  <img src="https://i.ibb.co/Y0zmV1r/linkedin.png" />
+                  <img
+                    src="https://i.ibb.co/Y0zmV1r/linkedin.png"
+                    alt="Linkedin Icon"
+                  />
                   <p>Linked In</p>
                 </a>
               </div>
 
               <div>
                 <a>
-                  <img src="https://i.ibb.co/GVHCfqc/twitter.png" />
+                  <img
+                    src="https://i.ibb.co/GVHCfqc/twitter.png"
+                    alt="Twitter Icon"
+                  />
                   <p>Twitter</p>
                 </a>
               </div>

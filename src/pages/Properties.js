@@ -33,7 +33,10 @@ function Properties() {
         <div className="container">
           <div className="propertiesDiv">
             <div>
-              <img src="https://i.ibb.co/bHspLV3/patikrit-Complex.png" />
+              <img
+                src="https://i.ibb.co/bHspLV3/patikrit-Complex.png"
+                alt="Project Image"
+              />
             </div>
             <div>
               <p className="darkBlueBigText">PATIKRIT COMPLEX</p>
@@ -65,7 +68,10 @@ function Properties() {
 
           <div className="propertiesDiv">
             <div>
-              <img src="https://i.ibb.co/71SCM00/mangalmurti-Apertment.png" />
+              <img
+                src="https://i.ibb.co/71SCM00/mangalmurti-Apertment.png"
+                alt="Project Image"
+              />
             </div>
             <div>
               <p className="darkBlueBigText">MANGALMURTI APERTMENT</p>
