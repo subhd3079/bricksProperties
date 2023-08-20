@@ -40,7 +40,7 @@ function Navbar() {
       <div className="navbar">
         <div className="logoSection">
           <NavLink to="/">
-            <img src={require("../images/icons/fullLogo.png")} />
+            <img src={require("../images/icons/fullLogo.png")} alt="Company Logo" />
           </NavLink>
         </div>
         <div className="menuSection">

@@ -22,10 +22,9 @@ function Interior() {
 
   return (
     <div className="interior" id="interior">
+      {/* top button */}
+      <TopButton />
 
-    {/* top button */}
-    <TopButton />
-    
       <div className="navbarColorSection">
         <Navbar />
       </div>
@@ -51,7 +50,7 @@ function Interior() {
             interiorData.map((ele) => (
               <div className="interiorGridDiv" key={ele.title}>
                 <div>
-                  <img src={ele.image} />
+                  <img src={ele.image} alt={ele.alt} />
                 </div>
                 <div>
                   <p className="darkBlueSmallText">{ele.title}</p>
