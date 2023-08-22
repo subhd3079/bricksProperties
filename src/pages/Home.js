@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -19,6 +19,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
   const [input, setInput] = useState("");
   const form = useRef();
+  const {id} = useParams();
 
   const handleChange = (event) => {
     const value = event.target.value;
@@ -135,13 +136,13 @@ function Home() {
               <Loader />
             ) : (
               projectData.map((ele) => (
-                <div key={ele.name}>
+                <NavLink to={`/properties/${id}`} key={ele.name}>
                   <div>
                     <img src={ele.image} alt={ele.alt} />
                   </div>
                   <p className="darkBlueSmallText">{ele.name}</p>
                   <p className="blackSmallText">{ele.place}</p>
-                </div>
+                </NavLink>
               ))
             )}
           </div>

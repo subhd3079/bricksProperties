@@ -7,6 +7,7 @@ import ContactUs from "./ContactUs";
 import TermsConditions from "./TermsConditions";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Faqs from "./Faqs";
+import Project from "../components/Project";
 
 function AllRoutes() {
   return (
@@ -20,6 +21,7 @@ function AllRoutes() {
         <Route path="/termsConditions" element={<TermsConditions />} />
         <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/faqs" element={<Faqs />} />
+        <Route path="/properties/:id" element={<Project />} />
       </Routes>
     </div>
   );
